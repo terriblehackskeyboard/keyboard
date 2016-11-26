@@ -4,7 +4,7 @@ android {
     compileSdkVersion 24
     buildToolsVersion '21.1.2'
     defaultConfig {
-        applicationId "bart.customkeyboard"
+        applicationId "website.terriblehack.keyboard"
         minSdkVersion 18
         targetSdkVersion 24
         versionCode 1

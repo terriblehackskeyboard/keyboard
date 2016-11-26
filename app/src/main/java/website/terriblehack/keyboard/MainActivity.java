@@ -1,4 +1,4 @@
-package bart.customkeyboard;
+package website.terriblehack.keyboard;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

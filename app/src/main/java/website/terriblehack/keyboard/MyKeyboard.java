@@ -1,4 +1,4 @@
-package bart.customkeyboard;
+package website.terriblehack.keyboard;
 
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
@@ -7,10 +7,6 @@ import android.media.AudioManager;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.InputConnection;
-
-/**
- * Created by bart on 2016-11-26.
- */
 
 public class MyKeyboard extends InputMethodService
         implements KeyboardView.OnKeyboardActionListener {
