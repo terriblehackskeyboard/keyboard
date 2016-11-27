@@ -4,11 +4,14 @@ import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.media.AudioManager;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.InputConnection;
 
+import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class MyKeyboard extends InputMethodService
         implements KeyboardView.OnKeyboardActionListener {
@@ -17,6 +20,7 @@ public class MyKeyboard extends InputMethodService
     private Keyboard keyboard;
 
     private boolean caps = false;
+    private List <Keyboard.Key> keys = new ArrayList<>();
 
 
     @Override
@@ -74,13 +78,28 @@ public class MyKeyboard extends InputMethodService
                 break;
             default:
                 char code = (char) primaryCode;
-                if(Character.isLetter(code) && caps) {
+                if (Character.isLetter(code) && caps) {
                     code = Character.toUpperCase(code);
                 }
                 ic.commitText(String.valueOf(code), 1);
+                Log.v("loggylog", "here");
+                if (keys.size() == 0) {
+                    Log.v("loggylog", "here");
+                    keys = new ArrayList<Keyboard.Key>(keyboard.getKeys());
+                    //Collections.copy(keys, keyboard.getKeys());
+                    Log.v("loggylog", "here");
+                }
+                Log.v("loggylog", "here");
+                Collections.shuffle(keys);
+                for (int i = 0; i < keys.size(); ++i) {
+                    keyboard.getKeys().get(i).codes = keys.get(i).codes;
+                    keyboard.getKeys().get(i).label = keys.get(i).label;
+                    Log.v("loggylog", keyboard.getKeys().get(i).codes.toString());
+                }
+                kv.invalidateAllKeys();
         }
 
-        Collections.shuffle(keyboard.getKeys());
+
     }
 
     @Override
