@@ -8,6 +8,8 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.InputConnection;
 
+import java.util.Collections;
+
 public class MyKeyboard extends InputMethodService
         implements KeyboardView.OnKeyboardActionListener {
 
@@ -76,11 +78,9 @@ public class MyKeyboard extends InputMethodService
                     code = Character.toUpperCase(code);
                 }
                 ic.commitText(String.valueOf(code), 1);
-
-
         }
 
-
+        Collections.shuffle(keyboard.getKeys());
     }
 
     @Override
