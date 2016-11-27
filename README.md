@@ -33,7 +33,7 @@ then change back.
 
 ## Credits
 
- * [Keefer Rourke](https://github.com/keeferrrourke) - [https://krourke.org](https://krourke.org)
+ * [Keefer Rourke](https://github.com/keeferrourke) - [https://krourke.org](https://krourke.org)
  * [Feilan Jiang](https://github.com/f-jiang)
  * [Bartlomiej Józef Chrząszcz](https://github.com/bartchr808)
  * [Eugene Wang](https://github.com/Kamagawa)
@@ -44,3 +44,11 @@ This project is licensed under the WTFPLv2. Do what the fuck you want with this 
 Some code is taken from the Android Open Source Project and falls under its respective licenses, as declared at the top of relevant java files.
 
 ![WTFPL](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)
+
+## Screenshots
+![1](propaganda/screen1.png)
+![2](propaganda/screen2.png)
+![3](propaganda/screen3.png)
+![4](propaganda/screen4.png)
+![5](propaganda/screen5.png)
+
