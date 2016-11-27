@@ -1,4 +1,4 @@
-# Terrible Keyboard
+# Mindf@\*k Keyboard
 Typing is hard. We all know how difficult it is at times to press the *right*
 keys in the *right* combinations at the *right* times. It's a skill and it
 takes a lot of effort and coordination to do it effectively.
@@ -9,6 +9,8 @@ That's why we made it harder.
 This is a terrible soft-keyboard for Android devices, written in 8 hours for
 [Terrible Hack Waterloo](http://terriblehack.website). On every keypress, the
 the keyboard layout is randomized to make typing just so much more *fun*.
+
+Submission [here](https://devpost.com/software/terriblekeyboard).
 
 ## IT'S NOT A BUG IT'S A FEATURE!!!1
 When using this thing, you might notice that as you type, you wind up with
@@ -46,7 +48,6 @@ Some code is taken from the Android Open Source Project and falls under its resp
 ![WTFPL](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)
 
 ## Screenshots
-![1](propaganda/screen1.png)
 ![2](propaganda/screen2.png)
 ![3](propaganda/screen3.png)
 ![4](propaganda/screen4.png)
