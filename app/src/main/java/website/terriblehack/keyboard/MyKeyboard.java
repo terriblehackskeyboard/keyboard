@@ -22,6 +22,9 @@ public class MyKeyboard extends InputMethodService
     private boolean caps = false;
     private List <Keyboard.Key> keys = new ArrayList<>();
 
+    private Keyboard.Key clone() {
+        Keyboard.Key k = new Keyboard.Key();
+    }
 
     @Override
     public View onCreateInputView() {
@@ -86,7 +89,6 @@ public class MyKeyboard extends InputMethodService
                 if (keys.size() == 0) {
                     Log.v("loggylog", "here");
                     keys = new ArrayList<Keyboard.Key>(keyboard.getKeys());
-                    //Collections.copy(keys, keyboard.getKeys());
                     Log.v("loggylog", "here");
                 }
                 Log.v("loggylog", "here");
